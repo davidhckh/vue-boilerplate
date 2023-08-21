@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "RadioGrotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: local(""), url("/fonts/PPRadioGrotesk-Regular.woff2") format("woff2"), url("/fonts/PPRadioGrotesk-Regular.woff") format("woff");
+}
+
+/**
+@font-face {
+  font-family: "RadioGrotesk";
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+  src: local(""), url("/fonts/PPRadioGrotesk-RegularItalic.woff2") format("woff2"), url("/fonts/PPRadioGrotesk-RegularItalic.woff") format("woff");
+}*/
+
+@font-face {
+  font-family: "RadioGrotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: local(""), url("/fonts/PPRadioGrotesk-Medium.woff2") format("woff2"), url("/fonts/PPRadioGrotesk-Medium.woff") format("woff");
+}
+
+/**
+@font-face {
+  font-family: "RadioGrotesk";
+  font-style: italic;
+  font-weight: 500;
+  font-display: block;
+  src: local(""), url("/fonts/PPRadioGrotesk-MediumItalic.woff2") format("woff2"), url("/fonts/PPRadioGrotesk-MediumItalic.woff") format("woff");
+}*/

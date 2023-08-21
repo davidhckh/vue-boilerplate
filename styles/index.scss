@@ -1,0 +1,37 @@
+@import "./reset.scss";
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: auto;
+  height: auto;
+  overscroll-behavior: contain;
+}
+
+html,
+body {
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  font-family: "RadioGrotesk";
+  color: $color-white;
+  background-color: $color-black;
+  max-width: 100%;
+
+  font-size: clamp(12px, 4.266667vw, 20px);
+
+  @include mq("md") {
+    font-size: clamp(12px, 1.6vw, 16px);
+  }
+
+  @include mq("lg") {
+    font-size: clamp(12px, 0.85vw, 16px);
+  }
+}
+
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}

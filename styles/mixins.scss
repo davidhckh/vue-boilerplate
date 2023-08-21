@@ -1,0 +1,38 @@
+%cover {
+  height: var(--100vh);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+$breakpoints: (
+  "md": (
+    width: 768px,
+  ),
+  "lg": (
+    width: 1200px,
+  ),
+  "xl": (
+    width: 1440px,
+  ),
+) !default;
+
+$media-direction: min;
+
+@mixin mq($mq, $direction: $media-direction, $dimension: "width") {
+  @if map-has-key($breakpoints, $mq) {
+    $breakpoint: map-get($breakpoints, $mq);
+    $value: map-get($breakpoint, $dimension);
+
+    @media (#{$direction}-#{$dimension}: $value) {
+      @content;
+    }
+  } @else if unitless($mq) {
+    $mq: $mq + 0px;
+
+    @media (#{$direction}-#{$dimension}: $mq) {
+      @content;
+    }
+  }
+}
